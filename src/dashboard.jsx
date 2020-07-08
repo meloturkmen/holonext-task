@@ -39,7 +39,6 @@ const onSceneReady = scene => {
 
   // Uploading gltf file
   modal = SceneLoader.ImportMesh("","scenes/office_chair/","scene.gltf" ,scene, function (newMeshes) {
-    console.log("geldi")
     mesh = newMeshes[0]
     camera.target = mesh;
   })
